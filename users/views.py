@@ -42,9 +42,10 @@ def profile(request):
     # else:
     #     u_form = UserUpdateForm(instance=request.user)
     #     p_form = ProfileUpdateForm(instance=request.user.profile)
+    #       qH7tacgAAAAJ request.user.username
     params = {
           "api_key": "425d6fb5ad378e6887055b328dad42d7ff166d2476aaefd7b2c6a814312ed22f",
-          "author_id": "qH7tacgAAAAJ",
+          "author_id": request.user.username,
           "engine": "google_scholar_author",
           "hl": "en",
         }
@@ -58,7 +59,7 @@ def profile(request):
 # }
     print(request.user.first_name + " " + request.user.last_name)
     print(request.user.last_name)
-    print(request.user.profile)
+    # print(request.user.profile)
 
     search = GoogleSearch(params) # Assuming GoogleSearch is your model to interact with the API
     results = search.get_dict()
@@ -102,7 +103,6 @@ def error403(request):
 
 def user_logout(request):
     logout(request)
-    messages.success(request, ("Logout Successfully"))
     return redirect('login')
 
 

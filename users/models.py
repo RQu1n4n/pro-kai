@@ -11,9 +11,6 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     image = models.ImageField(default='default.jpg', upload_to='profile_pics')
     authors_id = models.CharField(max_length=50, null=False)
-    story1git  = models.CharField(max_length=50, null=True)
-    story1 = models.CharField(max_length=50, null=True)
-    story2 = models.CharField(max_length=50, null=True)
 
     def __str__(self):
         return f'{self.user.username} Profile'

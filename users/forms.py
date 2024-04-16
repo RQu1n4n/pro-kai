@@ -14,6 +14,7 @@ class UserRegisterForm(UserCreationForm):
 
 
 
+
 class UserUpdateForm(forms.ModelForm):
     email = forms.EmailField()
 

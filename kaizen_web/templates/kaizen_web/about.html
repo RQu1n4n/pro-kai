@@ -3,16 +3,69 @@
 {% block content %}
 <html>
     <head>
-        <link rel="stylesheet" href="/static/css/about.css">
+        <link rel="stylesheet" href="{/static/css/about.css}">
     </head>
     <body>
-        <div class="container">
-            <h1>About Us</h1>
-            <h2>Welcome to our website</h2>
-            <p class="caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec dui enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla tincidunt, elit eu consectetuer ultricies, nisi metus accumsan lorem, quis varius nunc ligula non pede.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec dui enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla tincidunt, elit eu consectetuer ultricies, nisi metus accumsan lorem, quis varius nunc ligula non pede.</p>
+    
+    <div class="about-page">
+        <h1 style="text-align: center";>About Us</h1>
+        <p>What Is Kaizen Website All About?</p>
+        <p style="text-align: center;">This Kaizen Website Helps & Guides You To Find And Search Your Favorite & Recommended Published Articles Especially Search Your Recommended & Trusted
+        Authors.This Website Includes The Professor's Profile And List Of Its Published Articles</p>
+    
+    </div>
+    
+    <h2 style="text-align: center;">This Is Our Team/Web Developers</h2>
+    </br>
+    </br>
+    </br>
+    
+    <div class="row">
+        <div class="column">
+            <picture>
+                <img src={% static "images/Agapito.jpg" %} style='max-width:250px' class="img-rounded" alt="Vincent">
+                <div class="container">
+                    <h2>Vincent Pol Agapito</h2>
+                    <p class="title">Railway Engineering Elective Track Student</p>
+                    <p>qvppagapito@tip.edu.ph</p>
+                </div>
+            </div>
+        </picture>
+    
+    <div class="column">
+        <div class="picture">
+            <img src={% static "images/Quinan.png" %} style='max-width:250px' alt="Richard" >
+            <div class="container">
+                <h3>Richard Quinan Jr.</h3>
+                    <p class="title">Intelligent System Elective Track Student</p>
+                    <p>qrlquinanjr@tip.edu.ph</p>
+                </div>
+            </div>
+        </div>
+    
+    <div class="column">
+        <div class="picture">
+            <img src={% static "images/Ragragio.jpg" %} style='max-width:250px' alt="John Michael">
+                <div class="container">
+                    <h3>John Michael Ragragio</h3>
+                        <p class="title">System Administrator Elective Track Student</p>
+                        <p>qjmmragragio@tip.edu.ph</p>
+                    </div>
+                </div>
+            </div>
+    
+    <div class="column">
+        <div class="picture">
+            <img src={% static "images/Doc Taylar.png" %} style='max-width:250px' alt="Jonathan">
+                <div class="container">
+                    <h3>Doctor Jonathan V.Taylar</h3>
+                        <p class="title">Professor/Faculty Member Of Computer Engineering Department In Technologcal Institute Of The Philippines-Quezon City</p>
+                        <p>jtaylar.cpe@tip.edu.ph</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
-</html>
+    </html>
 
 {% endblock %}

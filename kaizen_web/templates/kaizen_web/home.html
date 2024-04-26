@@ -13,13 +13,14 @@
               <button class="btn btn-outline-info" type="submit">Update</button>
           </div>
       </form> {% endcomment %}
-      <div class="container">
+
+      <div class="circlebody">
         <div class="row">
             <div class="col-xl-8">
                 {% for profile in all_profiles %}
                   {% comment %} {% if profile.email == user.email %} {% endcomment %}
-                    <div class="card">
-                      <div class="card-body pb-0">
+                    <div class="circlebody">
+                      <div class="circlebody">
                           <div class="row align-items-center">
                               <div class="col-md-3">
                                   <div class="text-center border-end">

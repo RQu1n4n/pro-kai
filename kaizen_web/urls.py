@@ -26,7 +26,7 @@ from kaizen_web.views import home
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('users.urls')),
-    path('home/', views.home, name='home'),
+    path('', views.home, name='home'),
     path('about/', views.about, name="about"),
     path('error403/', views.error403, name='error403'),
 ]

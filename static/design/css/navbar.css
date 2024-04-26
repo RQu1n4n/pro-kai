@@ -20,7 +20,7 @@
     background-color: rgb(215,172,4);
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 0; 
 }
 
 .nav-link:hover{

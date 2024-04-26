@@ -1,6 +1,6 @@
 # from django.urls import path, include
 # from users import views as user_views
-from django.shortcuts import render,get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from django.urls import path, include
@@ -11,7 +11,7 @@ from kaizen_web import views
 from . import views
 
 urlpatterns = [
-    # path('admin/', admin.site.urls),
+    #path('admin/', admin.site.urls),
     path('register/', user_views.register, name='register'),
     path('profile/', user_views.profile, name='profile'),
     path('logout/', views.user_logout, name='logout'),

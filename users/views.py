@@ -27,7 +27,7 @@ def register(request):
 
 @login_required
 def profile(request):
-    print("richard is here")
+    # print("richard is here")
     # if request.method == 'POST':
     #     u_form = UserUpdateForm(request.POST, instance=request.user)
     #     p_form = ProfileUpdateForm(request.POST,
@@ -58,8 +58,8 @@ def profile(request):
 #     # "mauthors": "jonathan",
 #     "mauthors":  request.user.first_name + " " + request.user.last_name
 # }
-    print(request.user.first_name + " " + request.user.last_name)
-    print(request.user.last_name)
+   # print(request.user.first_name + " " + request.user.last_name)
+   # print(request.user.last_name)
     # print(request.user.profile)
 
     search = GoogleSearch(params) # Assuming GoogleSearch is your model to interact with the API
@@ -68,7 +68,7 @@ def profile(request):
     articles = results.get("articles", [{}])
     # profiles_json =json.dumps(results["profiles"])
     # profiles = json.loads(profiles_json)
-    print("obet")
+    #print("obet")
 
     #    return render(request, self.template_name, {'profiles': profiles})
 

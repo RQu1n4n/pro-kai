@@ -13,7 +13,7 @@
                     <h6 class="card-subtitle mb-2 text-muted">{{ profile.interests.0.title }}</h6>
                     <p class="card-subtitle mb-2 text-muted">{{ profile.interests.affiliation }}</p> <!-- Changed to <p> for semantic correctness -->
                     <a href="{{profile.link}}" class="btn btn-primary" target="_blank">Google Scholar Link</a>
-                    <a href="{% url 'profile' author_id=profile.author_id  %}" method="get" class="btn btn-primary" target="_blank">View Profile</a> <!-- Assumed URL pattern needs a parameter -->
+                    <a href="{% url 'profile'  %}" method="get" class="btn btn-primary" target="_blank">View Profile</a> <!-- Assumed URL pattern needs a parameter -->
                 </div>
             </div>
         </div>

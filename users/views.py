@@ -48,6 +48,23 @@ class author_profile(View):
         articles = results.get("articles", [{}])
 
         return render (request, self.template_name, {'author': author,'articles': articles} )
+    
+class ProfileDetailView(View):
+    
+    template_name = 'users/profile.html'
+
+    def get(self, request, author_id):
+        params = {
+            "engine": "google_scholar_author",
+            "author_id": author_id,
+            "api_key": "425d6fb5ad378e6887055b328dad42d7ff166d2476aaefd7b2c6a814312ed22f"
+        }
+        search = GoogleSearch(params)  # Assuming GoogleSearch is your model to interact with the API
+        results = search.get_dict()
+        author = results.get("author", {})
+        articles = results.get("articles", [{}])
+        
+        return render(request, self.template_name, {'author': author, 'articles': articles})
 
 def user_login(request):
     if request.method == 'POST':

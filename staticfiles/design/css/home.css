@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Arial Narrow', sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+    padding: 20px;
+    padding-top: calc(var(--navbar-height) + 20px); /* Use calc() to add extra space */
+  }
+
+.card {
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 10px auto 20px;
+}
+
+.card-title {
+  font-size: 20px; /* Adjust based on your design */
+}
+
+.card-text {
+  color: black;
+}
+
+.btn {
+  margin-top: 10px;
+}
